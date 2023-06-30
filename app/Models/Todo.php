@@ -13,6 +13,7 @@ class Todo extends Model
 
     protected $attributes = [
         'completed' => '0',
+        'user_id' => '1',
     ];
 
 

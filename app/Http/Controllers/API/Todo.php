@@ -30,7 +30,7 @@ class Todo extends Controller
         $todo = new \App\Models\Todo();
         $todo->fill($data);
         $todo->save();
-        return response()->json(['todo'=>$todo], 201);
+        return response()->json(['todo'=> $todo], 201);
     }
 
     /**
@@ -58,7 +58,7 @@ class Todo extends Controller
         $todo = \App\Models\Todo::find($id);
         if (isset($todo)){
             $todo->update($data);
-            return response()->json($todo, 200);
+            return response()->json($data, 200);
         }
         return response()->json(['message' => 'Operation failed'], 400);
     }

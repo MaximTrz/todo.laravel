@@ -1,0 +1,1 @@
+export type FiltersNames = "all" | "active" | "done"
